@@ -42,7 +42,7 @@ def makeResponse(req):
     return {
     "fulfillmentText": speech,
     "fulfillmentMessages": speech,
-    "source": "weatheraish"
+    "source": "example.com"
     }
 
 if __name__ == '__main__':
