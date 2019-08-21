@@ -41,7 +41,7 @@ def makeResponse(req):
     speech = "The forecast for"+city+ "for "+date+" is "+condition
     return {
     "fulfillmentText": speech,
-    "fulfillmentMessages": speech,
+    "fulfillmentText": speech,
     "source": "TripPlanner"
     }
 
