@@ -42,7 +42,7 @@ def makeResponse(req):
     return {
     "fulfillmentText": speech,
     "fulfillmentMessages": speech,
-    "source": "apiai-webhook-weatherbot"
+    "source": "example.com""
     }
 
 if __name__ == '__main__':
