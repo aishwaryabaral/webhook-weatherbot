@@ -29,7 +29,7 @@ def makeResponse(req):
     parameters = result.get("parameters")
     city = parameters.get("geo-city")
     date = parameters.get("date")
-    condition = ""
+    condition = None
     if city is None:
         return None
     r=requests.get('http://api.openweathermap.org/data/2.5/forecast?q='+city+'&appid=a0915742919d69959aa8f137d290379c')
@@ -42,7 +42,7 @@ def makeResponse(req):
             break
     speech = "The forecast for"+city+ "for "+date+" is "+condition
     return {
-    "fulfillmentText": condition,
+    "fulfillmentText": speech,
     #"fulfillmentMessages": speech,
     "source": "webhook-weatherbot"
     }
