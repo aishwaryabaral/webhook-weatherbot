@@ -42,7 +42,7 @@ def makeResponse(req):
             break
     speech = "The forecast for"+city+ "for "+date+" is "+condition
     return {
-    "fulfillmentText": speech,
+    "fulfillmentText": condition,
     #"fulfillmentMessages": speech,
     "source": "webhook-weatherbot"
     }
