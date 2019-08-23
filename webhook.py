@@ -32,7 +32,7 @@ def makeResponse(req):
     condition = ""
     if city is None:
         return None
-    r=requests.get('http://api.openweathermap.org/data/2.5/forecast?q='+city+'&appid=06f070197b1f60e55231f8c46658d077')
+    r=requests.get('http://api.openweathermap.org/data/2.5/forecast?q='+city+'&appid=a0915742919d69959aa8f137d290379c')
     json_object = r.json()
     weather=json_object['list']
     #condition = ""
